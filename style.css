@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-attachment: fixed;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: url('bg3.jpeg') no-repeat center center/cover;
+}
+
+#movieForm {
+    width: 40%; 
+    height: 70vh; 
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: #fff; 
+    text-align: center; 
+    overflow: auto; 
+}
+
+#movieForm h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Algerian', sans-serif; 
+    color: red;
+}
+
+#movieTable h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Algerian', sans-serif;
+    color: red;
+}
+
+.add-text {
+    color: red; 
+    font-family: 'Algerian', sans-serif; 
+    font-size: 30px;
+}
+
+.movie-text {
+    color: white; 
+    font-family: 'Algerian', sans-serif; 
+    font-size: 30px;
+}
+
+.red-text {
+    color: red; 
+    font-family: 'Algerian', sans-serif; 
+    font-size: 50px;
+}
+
+.white-text {
+    color: white; 
+    font-family: 'Algerian', sans-serif; 
+    font-size: 50px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 120px; 
+    margin-right: 322px; 
+    vertical-align: top; 
+    text-align: left; 
+    font-family: "Tempus Sans ITC";
+}
+
+input[type="text"],
+input[type="date"],
+.button,
+select {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    width: calc(100% - 30px); 
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff0000; 
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    width: calc(100% - 30px); 
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.button:hover {
+    background-color: green; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    transform: translateY(-50%);
+}
+
+#movieTable {
+    width: 95%; 
+    border-collapse: collapse;
+    background-color: transparent; 
+    position: fixed; 
+    margin-top: 70px; 
+}
+
+#movieTable th,
+#movieTable td {
+    border: 2px solid white; /* Updated border style */
+    padding: 8px;
+    vertical-align: middle; 
+    border-radius: 0; 
+}
+
+th {
+    background-color: #f2f2f2; 
+    text-align: center; 
+    border: 2px solid white; /* Ensure header cells have the same border style */
+    font-family: "Broadway";
+    position: sticky; 
+    top: 0; 
+    z-index: 1; 
+}
+
+td {
+    border: 2px solid white; /* Ensure data cells have the same border style */
+    font-family: "MV Boli";
+    text-align: center;
+    color: white;
+    font-weight: bold; 
+}
+
+tr:hover {
+    background-color: darkred; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    transform: translateY(-50%);
+}
+
+#movieTable {
+    width: 95%; 
+    border-collapse: collapse;
+    background-color: transparent; 
+    position: fixed; 
+    margin-top: 70px; 
+}
+
+#movieTable th,
+#movieTable td {
+    border: 2px solid white;
+    padding: 8px;
+    vertical-align: middle; 
+    border-radius: 0; 
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: center;
+    border: 2px solid white;
+    font-family: "Broadway";
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+td {
+    border: 2px solid white;
+    font-family: "MV Boli";
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: darkred;
+}
+
+h2 p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Algerian', sans-serif;
+    color: red;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.edit-btn {
+    background-color: green !important; /* Force green for edit button */
+    border-radius: 50%;
+    padding: 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.edit-btn:hover {
+    background-color: darkgreen !important; /* Force dark green on hover */
+}
+
+.delete-btn {
+    background-color: red !important; /* Force red for delete button */
+    border-radius: 50%;
+    padding: 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.delete-btn:hover {
+    background-color: darkred !important; /* Force dark red on hover */
+}
+
+.edit-btn i, .delete-btn i {
+    color: white; /* Ensure icon color is white */
+    font-size: 16px;
+}
